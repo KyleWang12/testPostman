@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "/status/all",
-			"_postman_id": "542d8ceb-3fb8-4cff-83b4-3df53487a93f",
+			"id": "542d8ceb-3fb8-4cff-83b4-3df53487a93f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -20,14 +20,14 @@
 						"type": "text"
 					}
 				],
-				"url": "{{addr}}/status/all",
+				"url": "{{addr}}/status/allll",
 				"description": "Get all status for all residents at all times. We're not using this API for frontend user"
 			},
 			"response": []
 		},
 		{
 			"name": "/status/latest",
-			"_postman_id": "a6d02974-9de3-4756-b890-5916280bc4fb",
+			"id": "a6d02974-9de3-4756-b890-5916280bc4fb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -93,7 +93,7 @@
 		},
 		{
 			"name": "/alert_settings/",
-			"_postman_id": "53cab450-b53a-4e83-815c-addc5dc832a9",
+			"id": "53cab450-b53a-4e83-815c-addc5dc832a9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -165,7 +165,7 @@
 		},
 		{
 			"name": "/alert_settings/",
-			"_postman_id": "41273341-a4c0-48f4-8058-fe5e9ea0a9dc",
+			"id": "41273341-a4c0-48f4-8058-fe5e9ea0a9dc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -185,10 +185,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"still_in_bed\": {\r\n        \"enable\": false,\r\n        \"preset_time\": 200\r\n    },\r\n    \"get_up_too_frequently\": {\r\n        \"enable\": false\r\n    },\r\n    \"not_returned_to_bed\": {\r\n        \"enable\": false,\r\n        \"preset_time\": 30\r\n    }\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"still_in_bed\": {\r\n        \"enable\": false,\r\n        \"preset_time\": 200\r\n    },\r\n    \"get_up_too_frequently\": {\r\n        \"enable\": false\r\n    },\r\n    \"not_returned_to_bed\": {\r\n        \"enable\": false,\r\n        \"preset_time\": 30\r\n    }\r\n}"
 				},
 				"url": "{{addr}}/alert_settings/",
 				"description": "This API call is for updating the alert settings for each resident"
@@ -258,7 +255,7 @@
 		},
 		{
 			"name": "/alerts/all",
-			"_postman_id": "84b178dc-3520-4ddd-9750-6da97820104e",
+			"id": "84b178dc-3520-4ddd-9750-6da97820104e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -330,7 +327,7 @@
 		},
 		{
 			"name": "/alerts/<alertId>",
-			"_postman_id": "a731d4d7-8a2d-4a99-a1e2-a3a2c23c463e",
+			"id": "a731d4d7-8a2d-4a99-a1e2-a3a2c23c463e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -350,10 +347,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"state\": \"resolved\",\r\n    \"caregiver_id\": \"12345\",\r\n    \"discription\": \"notenote\"\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"state\": \"resolved\",\r\n    \"caregiver_id\": \"12345\",\r\n    \"discription\": \"notenote\"\r\n}"
 				},
 				"url": "{{addr}}/alerts/629ff5cd81d7b59cf17f5e0d",
 				"description": "This API call is to change the state or assign/change a caregiver of an alert.\n\nOptional body (one of the state and caregiver_id must be provided):\n\n1.  state: (resolved, in_progress, unresolved)\n2.  caregiver_id\n3.  description\n    \n\nThe header requires the JWT token, the result only shows the residents in the community that provides the JWT."
@@ -429,7 +423,7 @@
 		},
 		{
 			"name": "/alerts/active",
-			"_postman_id": "3832fc99-4baa-43b5-8748-95fdf0181ac0",
+			"id": "3832fc99-4baa-43b5-8748-95fdf0181ac0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -501,7 +495,7 @@
 		},
 		{
 			"name": "/alerts/active&in_progress",
-			"_postman_id": "8006a87d-6852-4633-aa22-a14dff3665a9",
+			"id": "8006a87d-6852-4633-aa22-a14dff3665a9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -588,7 +582,7 @@
 					}
 				}
 			],
-			"_postman_id": "27524346-f354-439d-84f0-4b3cf3305cff",
+			"id": "27524346-f354-439d-84f0-4b3cf3305cff",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -603,10 +597,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"community_1@gmail.com\",\n    \"password\": \"123456789\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"email\": \"community_1@gmail.com\",\n    \"password\": \"123456789\"\n}"
 				},
 				"url": "{{addr}}/auth/login/",
 				"description": "This is the API to login. It will find the data from the community database and grants the access token.\n\nRequired body:\n\n1.  email: COMMUNITY_EMAIL\n2.  password: COMMUNITY_PASSWORD"
@@ -741,7 +732,7 @@
 					}
 				}
 			],
-			"_postman_id": "75f733ab-d0f9-475f-8f0a-b81254bf2bf4",
+			"id": "75f733ab-d0f9-475f-8f0a-b81254bf2bf4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -761,70 +752,12 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"old_password\": \"123456789\",\n    \"new_password\": \"987654321\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"old_password\": \"123456789\",\n    \"new_password\": \"987654321\"\n}"
 				},
 				"url": "{{addr}}/auth/change_password/",
 				"description": "This is the API to login. It will find the data from the community database and grants the access token.\n\nRequired body:\n\n1.  email: COMMUNITY_EMAIL\n2.  password: COMMUNITY_PASSWORD"
 			},
 			"response": [
-				{
-					"id": "26b64b41-f914-49f6-a495-3fdb31c8b08e",
-					"name": "/auth/login",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"hospital@gmail.com\",\n    \"password\": \"123456789\"\n}"
-						},
-						"url": "{{addr}}/auth/login"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "284"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"11c-HzoHrQ2IF3sL/381FNLqs306vr4\""
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 23 Apr 2022 04:48:51 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imhvc3BpdGFsQGdtYWlsLmNvbSIsImNvbW11bml0eV9pZCI6IjYyNjM4NGM1NzU0N2QzMzZhNDA5OGQxOSIsImlhdCI6MTY1MDY4OTMzMSwiZXhwIjoxNjUwNzc1NzMxfQ.o8W20FgkvuDfTh1v8DsWrvhotIdN8mGvdT4ga001HtA\",\n    \"community_id\": \"626384c57547d336a4098d19\"\n}"
-				},
 				{
 					"id": "9cac1ed0-b12f-4bbe-8e7e-ba2eb8c4e1a9",
 					"name": "/auth/login",
@@ -879,12 +812,67 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"Wrong password!\"\n}"
+				},
+				{
+					"id": "26b64b41-f914-49f6-a495-3fdb31c8b08e",
+					"name": "/auth/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"hospital@gmail.com\",\n    \"password\": \"123456789\"\n}"
+						},
+						"url": "{{addr}}/auth/login"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11c-HzoHrQ2IF3sL/381FNLqs306vr4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 23 Apr 2022 04:48:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imhvc3BpdGFsQGdtYWlsLmNvbSIsImNvbW11bml0eV9pZCI6IjYyNjM4NGM1NzU0N2QzMzZhNDA5OGQxOSIsImlhdCI6MTY1MDY4OTMzMSwiZXhwIjoxNjUwNzc1NzMxfQ.o8W20FgkvuDfTh1v8DsWrvhotIdN8mGvdT4ga001HtA\",\n    \"community_id\": \"626384c57547d336a4098d19\"\n}"
 				}
 			]
 		},
 		{
 			"name": "auth/signup",
-			"_postman_id": "ff69c609-8a6f-47d1-b387-ce97c6f376c8",
+			"id": "ff69c609-8a6f-47d1-b387-ce97c6f376c8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -899,10 +887,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"community_2@gmail.com\",\n    \"password\": \"123456789\",\n    \"role\": \"individual\",\n    \"entity_name\": \"hospital 2\",\n    \"address\": \"12345 10th Ave\",\n    \"city\": \"Los Angeles\",\n    \"state\": \"CA\",\n    \"zip_code\": 12345,\n    \"phone_number\": 4042938400\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"email\": \"community_2@gmail.com\",\n    \"password\": \"123456789\",\n    \"role\": \"individual\",\n    \"entity_name\": \"hospital 2\",\n    \"address\": \"12345 10th Ave\",\n    \"city\": \"Los Angeles\",\n    \"state\": \"CA\",\n    \"zip_code\": 12345,\n    \"phone_number\": 4042938400\n}"
 				},
 				"url": "{{addr}}/auth/signup",
 				"description": "This is the API to create new user. All the fields must be filled.\n\nRequired body:\n\n1.  email\n2.  password: -> password will be hashed before storing it to database\n3.  role: one of \\[\"individual\", \"community_admin\", \"community_staff\"\\]\n4.  entity_name\n5.  address\n6.  city\n7.  state\n8.  zip_code\n9.  phone_number"
@@ -967,7 +952,7 @@
 		},
 		{
 			"name": "status_webhook/create",
-			"_postman_id": "a0b5ce15-0a34-4737-ae1f-0d021197bb59",
+			"id": "a0b5ce15-0a34-4737-ae1f-0d021197bb59",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -982,10 +967,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"action\": \"update\",\r\n    \"type\": \"sensor_data\",\r\n    \"residentId\": \"61d691f95f502149cf29afbc\",\r\n    \"timestamp\": \"2022-03-10T11:41:40.476Z\",\r\n    \"dataSource\": \"Sleepsense\",\r\n    \"dataCategory\": \"vital_300s\",\r\n    \"deviceId\": \"C82B96804FE4\",\r\n    \"data\": {\r\n        \"ts\": \"2022-03-10T10:41:39.376Z\",\r\n        \"heartRate\": 61,\r\n        \"heartRateUnit\": \"BPM\",\r\n        \"breathingRate\": 15,\r\n        \"breathingRateUnit\": \"BPM\"\r\n    }\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"action\": \"update\",\r\n    \"type\": \"sensor_data\",\r\n    \"residentId\": \"61d691f95f502149cf29afbc\",\r\n    \"timestamp\": \"2022-03-10T11:41:40.476Z\",\r\n    \"dataSource\": \"Sleepsense\",\r\n    \"dataCategory\": \"vital_300s\",\r\n    \"deviceId\": \"C82B96804FE4\",\r\n    \"data\": {\r\n        \"ts\": \"2022-03-10T10:41:39.376Z\",\r\n        \"heartRate\": 61,\r\n        \"heartRateUnit\": \"BPM\",\r\n        \"breathingRate\": 15,\r\n        \"breathingRateUnit\": \"BPM\"\r\n    }\r\n}"
 				},
 				"url": "{{addr}}/status_webhook/create",
 				"description": "This API is not meant to use from the client side. It is the webhook endpoint for sending status data from VeriCare to our API."
@@ -1050,7 +1032,7 @@
 		},
 		{
 			"name": "/report/<residentId>",
-			"_postman_id": "663f9e14-04ea-4047-9cc7-7e3ee25d2984",
+			"id": "663f9e14-04ea-4047-9cc7-7e3ee25d2984",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1087,7 +1069,7 @@
 		},
 		{
 			"name": "/community_resident/<communityId>",
-			"_postman_id": "c8d9bd6d-c224-4989-90fa-a279c723d1a2",
+			"id": "c8d9bd6d-c224-4989-90fa-a279c723d1a2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1147,7 +1129,7 @@
 		},
 		{
 			"name": "/community_resident/<communityId>",
-			"_postman_id": "1014916c-003e-4d61-a796-bdc663016d73",
+			"id": "1014916c-003e-4d61-a796-bdc663016d73",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1162,10 +1144,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"resident_id\": \"61d69fbd5f502149cf2a1ac6\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"resident_id\": \"61d69fbd5f502149cf2a1ac6\"\n}"
 				},
 				"url": "{{addr}}/community_resident/626c632486be17890fab9a86",
 				"description": "This API is to assign a resident to a community. We don't use this API on the frontend because we're the one who assign resident to community. We might need another interface for this logic.\n\nThe header requires the JWT token, the result only shows the residents in the community that provides the JWT."
@@ -1285,7 +1264,7 @@
 		},
 		{
 			"name": "/community_resident/<communityId>",
-			"_postman_id": "84885da7-d9e2-41fc-94af-717954ba4448",
+			"id": "84885da7-d9e2-41fc-94af-717954ba4448",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1300,10 +1279,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"resident_id\": \"61d69fbd5f502149cf2a1ac6\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"resident_id\": \"61d69fbd5f502149cf2a1ac6\"\n}"
 				},
 				"url": "{{addr}}/community_resident/626c632486be17890fab9a86",
 				"description": "This API is to delete a resident from the community.\n\nThe header requires the JWT token, it only deletes the residents in the community that provides the JWT."
@@ -1423,7 +1399,7 @@
 		},
 		{
 			"name": "/caregiver/create",
-			"_postman_id": "daa3a1f1-9382-4623-81fb-bec1bac07709",
+			"id": "daa3a1f1-9382-4623-81fb-bec1bac07709",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1443,10 +1419,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\": \"Dr\",\n    \"last_name\": \"Hello\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"first_name\": \"Dr\",\n    \"last_name\": \"Hello\"\n}"
 				},
 				"url": "{{addr}}/caregiver/create",
 				"description": "This API is used to create new caregiver in a community.\n\nIt needs to have a body consisting of 3 optional fields:\n\n1.  first_name\n2.  last_name\n3.  role\n    \n\nThe header requires the JWT token."
@@ -1516,7 +1489,7 @@
 		},
 		{
 			"name": "/caregiver/all",
-			"_postman_id": "9ce0aaf8-9bb6-4b7f-af64-a4fa6e63cbc6",
+			"id": "9ce0aaf8-9bb6-4b7f-af64-a4fa6e63cbc6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1531,10 +1504,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "{{addr}}/caregiver/all",
 				"description": "This API is used to view all caregivers in a community.\n\nThe header requires the JWT token, the result only shows the caregiver in the community that provides the JWT."
@@ -1599,7 +1569,7 @@
 		},
 		{
 			"name": "/caregiver/<caregiverId>",
-			"_postman_id": "ee036e2f-5318-4a59-9385-0282c7411cfa",
+			"id": "ee036e2f-5318-4a59-9385-0282c7411cfa",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1614,10 +1584,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "{{addr}}/caregiver/627b5923904e42b1564b1bba",
 				"description": "This API is used to view a caregiver given its id\n\nThe header requires the JWT token, the result only shows the caregiver in the community that provides the JWT."
@@ -1682,7 +1649,7 @@
 		},
 		{
 			"name": "/caregiver/<caregiverId>",
-			"_postman_id": "7f5c6f76-aca3-4356-8ad3-124c93cbf211",
+			"id": "7f5c6f76-aca3-4356-8ad3-124c93cbf211",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1702,10 +1669,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\": \"Mr\"\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"first_name\": \"Mr\"\n}"
 				},
 				"url": "{{addr}}/caregiver/627b5923904e42b1564b1bba",
 				"description": "This API is used to update a caregiver given its id. You need to put the update fields on the request body.\n\nThe header requires the JWT token, it only updates the caregiver in the community that provides the JWT."
@@ -1775,7 +1739,7 @@
 		},
 		{
 			"name": "/caregiver/<caregiverId>",
-			"_postman_id": "db1b435a-e261-486e-b216-161050cf3193",
+			"id": "db1b435a-e261-486e-b216-161050cf3193",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1790,10 +1754,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "{{addr}}/caregiver/627b5891904e42b1564b1bb7",
 				"description": "This API is used to delete a caregiver given its id.\n\nThe header requires the JWT token, it only deletes the caregiver in the community that provides the JWT."
@@ -1858,7 +1819,7 @@
 		},
 		{
 			"name": "/resident/create",
-			"_postman_id": "fbbefcd2-81b9-46f2-811f-a0efa8271f7a",
+			"id": "fbbefcd2-81b9-46f2-811f-a0efa8271f7a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1878,10 +1839,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"veri_id\": \"61d69fbd5f502149cf2a1ac6\",\n    \"name\": \"F1B8\",\n    \"gender\": \"Male\",\n    \"age\": 22,\n    \"mobility_level\": \"Mobility\",\n    \"require_repositioning\": \"Multi\",\n    \"pet_type\": \"Fungus\",\n    \"weight\": 50,\n    \"room_id\": \"B3\",\n    \"address\": \"California\",\n    \"additional_information\": \"Some info\",\n\n    \"family_contact_person\": \"Gary\",\n    \"family_relationship\": \"Brother\",\n    \"family_contact_number\": 2043938472,\n    \"physician\": \"Jerry\",\n    \"physician_contact_number\": 4043928400,\n    \"wellness_nurse\": \"Sun\",\n\n    \"timezone\": \"PST\",\n    \"installation_date\": \"2022-01-01\",\n    \"assigned_bed_sensor\": \"Sleepsense\",\n\n    \"active_now\": true\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"veri_id\": \"61d69fbd5f502149cf2a1ac6\",\n    \"name\": \"F1B8\",\n    \"gender\": \"Male\",\n    \"age\": 22,\n    \"mobility_level\": \"Mobility\",\n    \"require_repositioning\": \"Multi\",\n    \"pet_type\": \"Fungus\",\n    \"weight\": 50,\n    \"room_id\": \"B3\",\n    \"address\": \"California\",\n    \"additional_information\": \"Some info\",\n\n    \"family_contact_person\": \"Gary\",\n    \"family_relationship\": \"Brother\",\n    \"family_contact_number\": 2043938472,\n    \"physician\": \"Jerry\",\n    \"physician_contact_number\": 4043928400,\n    \"wellness_nurse\": \"Sun\",\n\n    \"timezone\": \"PST\",\n    \"installation_date\": \"2022-01-01\",\n    \"assigned_bed_sensor\": \"Sleepsense\",\n\n    \"active_now\": true\n}"
 				},
 				"url": "{{addr}}/resident/create",
 				"description": "API to create/add new resident. This API also adds the row in the community.residents table and automatically creates resident alert settings.\n\nFields (haven't implement required fields functionality):\n\n1.  veri_id\n2.  name\n3.  gender\n4.  age\n5.  mobility_level\n6.  require_repositioning\n7.  pet_type\n8.  weight\n9.  room_id\n10.  address\n11.  additional_information\n12.  family_contact_person\n13.  family_relationship\n14.  family_contact_number\n15.  physician\n16.  physician_contact_number\n17.  wellness_nurse\n18.  timezone\n19.  installation_date\n20.  assigned_bed_sensor\n21.  active_now\n    \n\nThe header requires the JWT token, the result will creates the resident and assign it to the community that provides the JWT."
@@ -1890,7 +1848,7 @@
 		},
 		{
 			"name": "/resident/all",
-			"_postman_id": "43742c96-0922-45c8-b485-2a009957bd44",
+			"id": "43742c96-0922-45c8-b485-2a009957bd44",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -1972,7 +1930,7 @@
 		},
 		{
 			"name": "/resident/<residentId>",
-			"_postman_id": "6a8ac2c9-34fc-43dd-a205-dca8d6f68af6",
+			"id": "6a8ac2c9-34fc-43dd-a205-dca8d6f68af6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2054,7 +2012,7 @@
 		},
 		{
 			"name": "/resident/<residentId>",
-			"_postman_id": "13f8cd72-2f09-4630-bd54-bd1a6cce4747",
+			"id": "13f8cd72-2f09-4630-bd54-bd1a6cce4747",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2074,10 +2032,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"St.John\",\n    \"active_now\": false\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"name\": \"St.John\",\n    \"active_now\": false\n}"
 				},
 				"url": "{{addr}}/resident/60a7567aad3eb575c246be26",
 				"description": "API to change resident information.\n\nThe header requires the JWT token, the result only updates the resident in the community that provides the JWT."
@@ -2147,7 +2102,7 @@
 		},
 		{
 			"name": "/resident/<residentId>",
-			"_postman_id": "1238c495-9387-48d3-9e3b-2833ff8d78c8",
+			"id": "1238c495-9387-48d3-9e3b-2833ff8d78c8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2168,10 +2123,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {}
-					}
+					"raw": ""
 				},
 				"url": "{{addr}}/resident/61d69fbd5f502149cf2a1ac5",
 				"description": "API to delete resident. This will also removes the resident from community.resident database (removed from community) and the settings from resident.alert.settings.\n\nIt requires JWT token."
@@ -2242,7 +2194,7 @@
 		},
 		{
 			"name": "/resident_alert_settings/<residentId>",
-			"_postman_id": "df9cf50a-c754-47c9-bf31-6a6ea95f7537",
+			"id": "df9cf50a-c754-47c9-bf31-6a6ea95f7537",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2302,7 +2254,7 @@
 		},
 		{
 			"name": "/resident_alert_settings/<residentId>",
-			"_postman_id": "0d712acc-a239-4685-9c7e-ef86652d4542",
+			"id": "0d712acc-a239-4685-9c7e-ef86652d4542",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2317,10 +2269,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"still_in_bed\": {\n        \"enable\": false,\n        \"preset_time\": 200\n    },\n    \"off_bed\": {\n        \"enable\": false\n    }\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n    \"still_in_bed\": {\n        \"enable\": false,\n        \"preset_time\": 200\n    },\n    \"off_bed\": {\n        \"enable\": false\n    }\n}"
 				},
 				"url": "{{addr}}/resident_alert_settings/60a7567aad3eb575c246be26",
 				"description": "This API is used to modify the alert settings on a specific resident.\n\nThe header requires the JWT token, it only updates the resident settings in the community that provides the JWT."
@@ -2385,7 +2334,7 @@
 		},
 		{
 			"name": "/dashboard/inbed_status",
-			"_postman_id": "a5146d95-8ef5-4c5a-995c-7287f09ae22b",
+			"id": "a5146d95-8ef5-4c5a-995c-7287f09ae22b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2451,7 +2400,7 @@
 		},
 		{
 			"name": "/dashboard/alert_count_by_resident",
-			"_postman_id": "35bf6a45-6cf6-4a61-858c-39b9679847d7",
+			"id": "35bf6a45-6cf6-4a61-858c-39b9679847d7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2518,7 +2467,7 @@
 		},
 		{
 			"name": "/dashboard/hourly_alerts",
-			"_postman_id": "20682d77-b148-4873-9db8-7f6649a50f39",
+			"id": "20682d77-b148-4873-9db8-7f6649a50f39",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2584,7 +2533,7 @@
 		},
 		{
 			"name": "/dashboard/daily_alerts",
-			"_postman_id": "27941b30-40ca-41c8-8ed6-b14f7d875aa1",
+			"id": "27941b30-40ca-41c8-8ed6-b14f7d875aa1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -2665,7 +2614,7 @@
 		},
 		{
 			"name": "/alert_changes/<alertId>",
-			"_postman_id": "bff36769-b5ba-4af4-ac84-d86ab3916842",
+			"id": "bff36769-b5ba-4af4-ac84-d86ab3916842",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
