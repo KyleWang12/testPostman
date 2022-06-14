@@ -21,7 +21,7 @@
 					}
 				],
 				"url": {
-					"raw": "{{addr}}/status/all",
+					"raw": "{{addr}}/status/allllll",
 					"host": [
 						"{{addr}}"
 					],
