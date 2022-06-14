@@ -20,7 +20,7 @@
 						"type": "text"
 					}
 				],
-				"url": "{{addr}}/status/allll",
+				"url": "{{addr}}/status/all",
 				"description": "Get all status for all residents at all times. We're not using this API for frontend user"
 			},
 			"response": []
